@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #ffffff;
+}
+
+
+header {
+    background-color: #7bd7cb;
+
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+#menu {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #ddd;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0.6rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #bbb;
+}
+
+nav.open {
+    display: flex;
+}
+
+
+main {
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    background: #7bd7cb;
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 4px solid #ccc;
+    margin-top: 0.5rem;
+}
+
+figcaption {
+    font-size: 0.85rem;
+}
+
+figcaption h3 {
+    margin: 0.3rem 0;
+    color: black;
+}
+
+figcaption p {
+    margin: 0.2rem 0;
+    color: purple;
+
+}
+
+
+footer {
+    background-color: #7bd7cb;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
